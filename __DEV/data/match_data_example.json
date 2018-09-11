@@ -1,0 +1,1135 @@
+{
+   "sanctionnumber": "18-08-12676855",
+   "eventguid": "ce9a289e-9afa-4761-9ee7-bf593fb13543",
+   "eventtypecode": "MGNS",
+   "orgname": "Magic Art",
+   "coordinator": "51154001",
+   "startdate": "2018-08-06",
+   "postevententry": "false",
+   "enddate": "2018-08-06T23:07:14",
+   "format": "MODERN",
+   "eliminationType": "3",
+   "iscasualreportonly": "False",
+   "title": "Magic Tournament",
+   "isstarted": "True",
+   "status": "8",
+   "batchid": "",
+   "isplayoff": "False",
+   "manualmatchround": "0",
+   "notes": "",
+   "numberofrounds": "4",
+   "playoffstartround": "0",
+   "participation": {
+      "person": [
+         {
+            "id": "7213770401",
+            "first": "Rok",
+            "last": "Zbicajnik",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "4318719640",
+            "first": "Anze",
+            "last": "Dragan",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "1030220331",
+            "first": "Aleksander",
+            "last": "Fujs",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "7107034362",
+            "first": "David",
+            "last": "Legin",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "2112738171",
+            "first": "Nejc",
+            "last": "Bocaj",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "8213635288",
+            "first": "Drek",
+            "last": "Money",
+            "middle": "G",
+            "country": "SI"
+         },
+         {
+            "id": "51151183",
+            "first": "Klemen",
+            "last": "Pregl",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "8300227757",
+            "first": "Ziga",
+            "last": "Rozic",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "1318559986",
+            "first": "Jost",
+            "last": "Pintar",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "3112749803",
+            "first": "Andrej",
+            "last": "Kos",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "7212291355",
+            "first": "Grega",
+            "last": "Prosen",
+            "middle": "",
+            "country": "US"
+         },
+         {
+            "id": "9318556489",
+            "first": "Gal",
+            "last": "Bumbar",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "8213635372",
+            "first": "Tim",
+            "last": "Vakselj",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "9318673113",
+            "first": "Gaj",
+            "last": "Zizek",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "2212290746",
+            "first": "Miha",
+            "last": "Zehelj",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "1154280",
+            "first": "Anze",
+            "last": "Avsec",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "4213629327",
+            "first": "Peter",
+            "last": "Kolar",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "3112713844",
+            "first": "Rok",
+            "last": "Vrenjak Lazic",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "8102344303",
+            "first": "Beno",
+            "last": "Sircelj",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "1154135",
+            "first": "Aljaz",
+            "last": "Ivancic",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "2319061445",
+            "first": "Rok",
+            "last": "Kosir",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "6030220335",
+            "first": "Peter",
+            "last": "Gaber",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "8112415804",
+            "first": "Matic",
+            "last": "Vrhovec",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "3106784408",
+            "first": "Nejc",
+            "last": "Schelhaus",
+            "middle": "",
+            "country": "SI"
+         },
+         {
+            "id": "2318723317",
+            "first": "Dan",
+            "last": "Jurca",
+            "middle": "",
+            "country": "SI"
+         }
+      ],
+      "team": [
+         {
+            "id": "293",
+            "name": "Avsec, Anze",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "1154280"
+            }
+         },
+         {
+            "id": "294",
+            "name": "Bocaj, Nejc",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "2112738171"
+            }
+         },
+         {
+            "id": "295",
+            "name": "Bumbar, Gal",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "9318556489"
+            }
+         },
+         {
+            "id": "296",
+            "name": "Dragan, Anze",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "4318719640"
+            }
+         },
+         {
+            "id": "297",
+            "name": "Fujs, Aleksander",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "1030220331"
+            }
+         },
+         {
+            "id": "298",
+            "name": "Gaber, Peter",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "6030220335"
+            }
+         },
+         {
+            "id": "299",
+            "name": "Ivancic, Aljaz",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "1154135"
+            }
+         },
+         {
+            "id": "300",
+            "name": "Jurca, Dan",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "2318723317"
+            }
+         },
+         {
+            "id": "301",
+            "name": "Kolar, Peter",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "4213629327"
+            }
+         },
+         {
+            "id": "302",
+            "name": "Kos, Andrej",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "3112749803"
+            }
+         },
+         {
+            "id": "303",
+            "name": "Kosir, Rok",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "2319061445"
+            }
+         },
+         {
+            "id": "304",
+            "name": "Legin, David",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "7107034362"
+            }
+         },
+         {
+            "id": "305",
+            "name": "Money, Drek",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "8213635288"
+            }
+         },
+         {
+            "id": "306",
+            "name": "Pintar, Jost",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "1318559986"
+            }
+         },
+         {
+            "id": "307",
+            "name": "Pregl, Klemen",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "51151183"
+            }
+         },
+         {
+            "id": "308",
+            "name": "Prosen, Grega",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "7212291355"
+            }
+         },
+         {
+            "id": "309",
+            "name": "Rozic, Ziga",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "8300227757"
+            }
+         },
+         {
+            "id": "310",
+            "name": "Schelhaus, Nejc",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "3106784408"
+            }
+         },
+         {
+            "id": "311",
+            "name": "Sircelj, Beno",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "8102344303"
+            }
+         },
+         {
+            "id": "312",
+            "name": "Vakselj, Tim",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "8213635372"
+            }
+         },
+         {
+            "id": "313",
+            "name": "Vrenjak Lazic, Rok",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "3112713844"
+            }
+         },
+         {
+            "id": "314",
+            "name": "Vrhovec, Matic",
+            "status": "3",
+            "eliminationround": "3",
+            "member": {
+               "position": "A",
+               "person": "8112415804"
+            }
+         },
+         {
+            "id": "315",
+            "name": "Zbicajnik, Rok",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "7213770401"
+            }
+         },
+         {
+            "id": "316",
+            "name": "Zehelj, Miha",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "2212290746"
+            }
+         },
+         {
+            "id": "317",
+            "name": "Zizek, Gaj",
+            "status": "2",
+            "eliminationround": "0",
+            "member": {
+               "position": "A",
+               "person": "9318673113"
+            }
+         }
+      ],
+      "role": [
+         {
+            "cd": "PL",
+            "ref": [
+               {
+                  "person": "3112749803",
+                  "seq": "1"
+               },
+               {
+                  "person": "1154280",
+                  "seq": "2"
+               },
+               {
+                  "person": "7213770401",
+                  "seq": "3"
+               },
+               {
+                  "person": "8213635288",
+                  "seq": "4"
+               },
+               {
+                  "person": "9318556489",
+                  "seq": "5"
+               },
+               {
+                  "person": "3106784408",
+                  "seq": "6"
+               },
+               {
+                  "person": "2319061445",
+                  "seq": "7"
+               },
+               {
+                  "person": "51151183",
+                  "seq": "8"
+               },
+               {
+                  "person": "2318723317",
+                  "seq": "9"
+               },
+               {
+                  "person": "6030220335",
+                  "seq": "10"
+               },
+               {
+                  "person": "3112713844",
+                  "seq": "11"
+               },
+               {
+                  "person": "1154135",
+                  "seq": "12"
+               },
+               {
+                  "person": "8300227757",
+                  "seq": "13"
+               },
+               {
+                  "person": "1030220331",
+                  "seq": "14"
+               },
+               {
+                  "person": "2212290746",
+                  "seq": "15"
+               },
+               {
+                  "person": "7107034362",
+                  "seq": "16"
+               },
+               {
+                  "person": "4213629327",
+                  "seq": "17"
+               },
+               {
+                  "person": "8213635372",
+                  "seq": "18"
+               },
+               {
+                  "person": "8102344303",
+                  "seq": "19"
+               },
+               {
+                  "person": "9318673113",
+                  "seq": "20"
+               },
+               {
+                  "person": "4318719640",
+                  "seq": "21"
+               },
+               {
+                  "person": "1318559986",
+                  "seq": "22"
+               },
+               {
+                  "person": "8112415804",
+                  "seq": "23"
+               },
+               {
+                  "person": "7212291355",
+                  "seq": "24"
+               },
+               {
+                  "person": "2112738171",
+                  "seq": "25"
+               }
+            ]
+         },
+         {
+            "cd": "PL"
+         },
+         {
+            "cd": "JG"
+         }
+      ]
+   },
+   "matches": [
+      {
+         "number": "1",
+         "PlayFormat": "MODERN",
+         "date": "2018-08-06T20:56:26",
+         "teamformat": "false",
+         "match": [
+            {
+               "person": "7213770401",
+               "opponent": "4318719640",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1030220331",
+               "opponent": "7107034362",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8213635288",
+               "opponent": "2112738171",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "51151183",
+               "opponent": "8300227757",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3112749803",
+               "opponent": "1318559986",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "9318556489",
+               "opponent": "7212291355",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "9318673113",
+               "opponent": "8213635372",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1154280",
+               "opponent": "2212290746",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3112713844",
+               "opponent": "4213629327",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1154135",
+               "opponent": "8102344303",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "6030220335",
+               "opponent": "2319061445",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3106784408",
+               "opponent": "8112415804",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2318723317",
+               "outcome": "3",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            }
+         ]
+      },
+      {
+         "number": "2",
+         "PlayFormat": "MODERN",
+         "date": "2018-08-06T21:06:45",
+         "teamformat": "false",
+         "match": [
+            {
+               "person": "4213629327",
+               "outcome": "3",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3112749803",
+               "opponent": "2318723317",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8213635288",
+               "opponent": "3112713844",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "7213770401",
+               "opponent": "1030220331",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "51151183",
+               "opponent": "1154280",
+               "outcome": "2",
+               "win": "0",
+               "loss": "0",
+               "draw": "1",
+               "winbydrop": "False"
+            },
+            {
+               "person": "9318556489",
+               "opponent": "9318673113",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "6030220335",
+               "opponent": "1154135",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "4318719640",
+               "opponent": "3106784408",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "7107034362",
+               "opponent": "2212290746",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8213635372",
+               "opponent": "2112738171",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1318559986",
+               "opponent": "8112415804",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2319061445",
+               "opponent": "7212291355",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8300227757",
+               "opponent": "8102344303",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            }
+         ]
+      },
+      {
+         "number": "3",
+         "PlayFormat": "MODERN",
+         "date": "2018-08-06T21:46:40",
+         "teamformat": "false",
+         "match": [
+            {
+               "person": "8112415804",
+               "outcome": "3",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3112749803",
+               "opponent": "9318556489",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "7213770401",
+               "opponent": "6030220335",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1154280",
+               "opponent": "8213635288",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3106784408",
+               "opponent": "51151183",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1154135",
+               "opponent": "4213629327",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2319061445",
+               "opponent": "9318673113",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3112713844",
+               "opponent": "4318719640",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2318723317",
+               "opponent": "7107034362",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8213635372",
+               "opponent": "1030220331",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8300227757",
+               "opponent": "1318559986",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2212290746",
+               "opponent": "2112738171",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8102344303",
+               "opponent": "7212291355",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            }
+         ]
+      },
+      {
+         "number": "4",
+         "PlayFormat": "MODERN",
+         "date": "2018-08-06T22:24:39",
+         "teamformat": "false",
+         "match": [
+            {
+               "person": "3112749803",
+               "opponent": "7213770401",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1154280",
+               "opponent": "6030220335",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8213635288",
+               "opponent": "2318723317",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "9318556489",
+               "opponent": "3112713844",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2319061445",
+               "opponent": "1154135",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "3106784408",
+               "opponent": "8300227757",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "51151183",
+               "opponent": "8213635372",
+               "outcome": "1",
+               "win": "2",
+               "loss": "1",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "4213629327",
+               "opponent": "4318719640",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "1030220331",
+               "opponent": "1318559986",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "8102344303",
+               "opponent": "9318673113",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "2212290746",
+               "opponent": "7212291355",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            },
+            {
+               "person": "7107034362",
+               "opponent": "2112738171",
+               "outcome": "1",
+               "win": "2",
+               "loss": "0",
+               "draw": "0",
+               "winbydrop": "False"
+            }
+         ]
+      }
+   ],
+   "seats": [],
+   "pods": {
+      "podround": [
+         {
+            "number": "1"
+         },
+         {
+            "number": "2"
+         },
+         {
+            "number": "3"
+         },
+         {
+            "number": "4"
+         }
+      ]
+   },
+   "log": [
+      {
+         "date": "2018-08-06T20:53:16",
+         "operation": "CRE",
+         "#text": "4.4.8.643"
+      },
+      {
+         "date": "2018-08-06T20:56:26",
+         "operation": "ROUND",
+         "#text": "Round Started 1"
+      },
+      {
+         "date": "2018-08-06T20:56:46",
+         "operation": "MATCH",
+         "#text": "Match Created Manually"
+      },
+      {
+         "date": "2018-08-06T21:06:45",
+         "operation": "ROUND",
+         "#text": "Round Started 2"
+      },
+      {
+         "date": "2018-08-06T21:06:46",
+         "operation": "MATCH",
+         "#text": "Matches created using match algorithm for round 2."
+      },
+      {
+         "date": "2018-08-06T21:46:40",
+         "operation": "ROUND",
+         "#text": "Round Started 3"
+      },
+      {
+         "date": "2018-08-06T21:46:41",
+         "operation": "MATCH",
+         "#text": "Matches created using match algorithm for round 3."
+      },
+      {
+         "date": "2018-08-06T22:24:39",
+         "operation": "ROUND",
+         "#text": "Round Started 4"
+      },
+      {
+         "date": "2018-08-06T22:24:41",
+         "operation": "MATCH",
+         "#text": "Matches created using match algorithm for round 4."
+      },
+      {
+         "date": "2018-08-06T23:07:14",
+         "operation": "COM",
+         "#text": "Tournament Completed"
+      },
+      {
+         "date": "2018-08-06T23:07:17",
+         "operation": "UPL",
+         "#text": "Results being uploaded."
+      },
+      {
+         "date": "2018-08-06T23:07:18",
+         "operation": "UPL",
+         "#text": "Results being uploaded."
+      }
+   ]
+}

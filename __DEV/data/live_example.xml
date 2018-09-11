@@ -1,0 +1,204 @@
+<event sanctionnumber="18-09-12819499" eventguid="65863de3-b2a2-4dff-a093-02744f588619" eventtypecode="MGNS" orgname="Magic Art" coordinator="51154001" startdate="2018-09-10" postevententry="false" enddate="0001-01-01T00:00:00" format="MODERN" eliminationType="3" iscasualreportonly="False" title="Magic Tournament " isstarted="True" status="8" batchid="" isplayoff="False" manualmatchround="0" notes="" numberofrounds="4" playoffstartround="0">
+  <participation>
+    <person id="9213709753" first="Tomaz" last="Umek" middle="" country="SI" />
+    <person id="1030220331" first="Aleksander" last="Fujs" middle="" country="SI" />
+    <person id="36084463" first="Tomo" last="Pejanovic Nosaka" middle="" country="SI" />
+    <person id="1318559986" first="Jost" last="Pintar" middle="" country="SI" />
+    <person id="1154281" first="Igor" last="Banic" middle="" country="SI" />
+    <person id="9318556489" first="Gal" last="Bumbar" middle="" country="SI" />
+    <person id="2112738171" first="Nejc" last="Bocaj" middle="" country="SI" />
+    <person id="1154280" first="Anze" last="Avsec" middle="" country="SI" />
+    <person id="62880550" first="Matej" last="Sircelj" middle="" country="SI" />
+    <person id="8213635310" first="Anze" last="Marinc" middle="" country="SI" />
+    <person id="9316065110" first="Matjaz" last="Zupan" middle="" country="SI" />
+    <person id="7212291355" first="Grega" last="Prosen" middle="" country="SI" />
+    <person id="8317046977" first="Domen" last="Prestor" middle="" country="SI" />
+    <person id="1203928751" first="Marsel" last="Bratusa" middle="" country="SI" />
+    <person id="9318673113" first="Gaj" last="Zizek" middle="" country="SI" />
+    <person id="8102344303" first="Beno" last="Sircelj" middle="" country="SI" />
+    <person id="3112749803" first="Andrej" last="Kos" middle="" country="SI" />
+    <person id="8213635372" first="Tim" last="Vakselj" middle="" country="SI" />
+    <person id="8213635288" first="Drek" last="Money" middle="G" country="SI" />
+    <person id="51151183" first="Klemen" last="Pregl" middle="" country="SI" />
+    <person id="4318719640" first="Anze" last="Dragan" middle="" country="SI" />
+    <person id="6030220335" first="Peter" last="Gaber" middle="" country="SI" />
+    <person id="4213629327" first="Peter" last="Kolar" middle="" country="SI" />
+    <team id="460" name="Bratusa, Marsel" status="2" eliminationround="0">
+      <member position="A" person="1203928751" />
+    </team>
+    <team id="461" name="Vakselj, Tim" status="2" eliminationround="0">
+      <member position="A" person="8213635372" />
+    </team>
+    <team id="462" name="Dragan, Anze" status="2" eliminationround="0">
+      <member position="A" person="4318719640" />
+    </team>
+    <team id="463" name="Sircelj, Beno" status="2" eliminationround="0">
+      <member position="A" person="8102344303" />
+    </team>
+    <team id="464" name="Pintar, Jost" status="2" eliminationround="0">
+      <member position="A" person="1318559986" />
+    </team>
+    <team id="465" name="Marinc, Anze" status="2" eliminationround="0">
+      <member position="A" person="8213635310" />
+    </team>
+    <team id="466" name="Zupan, Matjaz" status="2" eliminationround="0">
+      <member position="A" person="9316065110" />
+    </team>
+    <team id="467" name="Bumbar, Gal" status="2" eliminationround="0">
+      <member position="A" person="9318556489" />
+    </team>
+    <team id="468" name="Pejanovic Nosaka, Tomo" status="2" eliminationround="0">
+      <member position="A" person="36084463" />
+    </team>
+    <team id="469" name="Kos, Andrej" status="2" eliminationround="0">
+      <member position="A" person="3112749803" />
+    </team>
+    <team id="470" name="Prosen, Grega" status="2" eliminationround="0">
+      <member position="A" person="7212291355" />
+    </team>
+    <team id="471" name="Zizek, Gaj" status="2" eliminationround="0">
+      <member position="A" person="9318673113" />
+    </team>
+    <team id="472" name="Umek, Tomaz" status="2" eliminationround="0">
+      <member position="A" person="9213709753" />
+    </team>
+    <team id="473" name="Sircelj, Matej" status="2" eliminationround="0">
+      <member position="A" person="62880550" />
+    </team>
+    <team id="474" name="Fujs, Aleksander" status="2" eliminationround="0">
+      <member position="A" person="1030220331" />
+    </team>
+    <team id="475" name="Prestor, Domen" status="2" eliminationround="0">
+      <member position="A" person="8317046977" />
+    </team>
+    <team id="476" name="Avsec, Anze" status="2" eliminationround="0">
+      <member position="A" person="1154280" />
+    </team>
+    <team id="477" name="Banic, Igor" status="2" eliminationround="0">
+      <member position="A" person="1154281" />
+    </team>
+    <team id="478" name="Pregl, Klemen" status="2" eliminationround="0">
+      <member position="A" person="51151183" />
+    </team>
+    <team id="479" name="Gaber, Peter" status="2" eliminationround="0">
+      <member position="A" person="6030220335" />
+    </team>
+    <team id="480" name="Money, Drek" status="2" eliminationround="0">
+      <member position="A" person="8213635288" />
+    </team>
+    <team id="481" name="Bocaj, Nejc" status="2" eliminationround="0">
+      <member position="A" person="2112738171" />
+    </team>
+    <team id="482" name="Kolar, Peter" status="2" eliminationround="0">
+      <member position="A" person="4213629327" />
+    </team>
+    <role cd="PL" type="PA">
+      <ref person="9318556489" seq="1" />
+      <ref person="4213629327" seq="2" />
+      <ref person="8102344303" seq="3" />
+      <ref person="51151183" seq="4" />
+      <ref person="36084463" seq="5" />
+      <ref person="62880550" seq="6" />
+      <ref person="8213635310" seq="7" />
+      <ref person="1154281" seq="8" />
+      <ref person="2112738171" seq="9" />
+      <ref person="9318673113" seq="10" />
+      <ref person="6030220335" seq="11" />
+      <ref person="7212291355" seq="12" />
+      <ref person="3112749803" seq="13" />
+      <ref person="8213635288" seq="14" />
+      <ref person="8213635372" seq="15" />
+      <ref person="8317046977" seq="16" />
+      <ref person="9213709753" seq="17" />
+      <ref person="1154280" seq="18" />
+      <ref person="1203928751" seq="19" />
+      <ref person="1030220331" seq="20" />
+      <ref person="4318719640" seq="21" />
+      <ref person="1318559986" seq="22" />
+      <ref person="9316065110" seq="23" />
+    </role>
+    <role cd="PL" type="DQ" />
+    <role cd="JG" type="PA" />
+  </participation>
+  <matches>
+    <round number="1" PlayFormat="MODERN" date="2018-09-10T19:05:06" teamformat="false">
+      <match person="9213709753" outcome="3" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="36084463" opponent="1030220331" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1154281" opponent="1318559986" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="9318556489" opponent="2112738171" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="62880550" opponent="1154280" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="8213635310" opponent="9316065110" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7212291355" opponent="8317046977" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9318673113" opponent="1203928751" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="8102344303" opponent="3112749803" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="8213635288" opponent="8213635372" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="51151183" opponent="4318719640" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="4213629327" opponent="6030220335" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+    <round number="2" PlayFormat="MODERN" date="2018-09-10T19:46:42" teamformat="false">
+      <match person="8213635372" outcome="3" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="8102344303" opponent="7212291355" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="51151183" opponent="62880550" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9318556489" opponent="9318673113" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="36084463" opponent="8213635288" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="4213629327" opponent="9213709753" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1154281" opponent="8213635310" outcome="2" win="1" loss="1" draw="1" winbydrop="False" />
+      <match person="2112738171" opponent="6030220335" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="8317046977" opponent="1318559986" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="1154280" opponent="9316065110" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="1203928751" opponent="1030220331" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="3112749803" opponent="4318719640" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+    <round number="3" PlayFormat="MODERN" date="2018-09-10T20:41:52" teamformat="false">
+      <match person="6030220335" outcome="3" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="4213629327" opponent="36084463" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="8102344303" opponent="51151183" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9318556489" opponent="8213635310" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1154281" opponent="7212291355" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9318673113" opponent="8213635372" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="3112749803" opponent="1154280" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="62880550" opponent="1203928751" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="2112738171" opponent="8213635288" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="8317046977" opponent="9213709753" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="1030220331" opponent="4318719640" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9316065110" opponent="1318559986" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+    </round>
+    <round number="4" PlayFormat="MODERN" date="2018-09-10T21:32:54" teamformat="false">
+      <match person="4318719640" opponent="9316065110" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9318556489" opponent="8102344303" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="4213629327" opponent="1154281" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="51151183" opponent="9318673113" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="36084463" opponent="2112738171" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="62880550" opponent="3112749803" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="8213635310" opponent="8317046977" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6030220335" opponent="9213709753" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7212291355" opponent="1203928751" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="8213635288" opponent="1154280" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="8213635372" opponent="1030220331" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1318559986" outcome="3" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+  </matches>
+  <seats />
+  <pods>
+    <podround>
+      <round number="1" />
+      <round number="2" />
+      <round number="3" />
+      <round number="4" />
+    </podround>
+  </pods>
+  <log>
+    <entry date="2018-09-03T18:53:02" operation="CRE">4.5.0.646</entry>
+    <entry date="2018-09-10T19:05:06" operation="ROUND">Round Started 1</entry>
+    <entry date="2018-09-10T19:05:08" operation="MATCH">Matches created using match algorithm for round 1.</entry>
+    <entry date="2018-09-10T19:46:42" operation="ROUND">Round Started 2</entry>
+    <entry date="2018-09-10T19:46:45" operation="MATCH">Matches created using match algorithm for round 2.</entry>
+    <entry date="2018-09-10T20:41:52" operation="ROUND">Round Started 3</entry>
+    <entry date="2018-09-10T20:41:56" operation="MATCH">Matches created using match algorithm for round 3.</entry>
+    <entry date="2018-09-10T21:32:54" operation="ROUND">Round Started 4</entry>
+    <entry date="2018-09-10T21:32:55" operation="MATCH">Matches created using match algorithm for round 4.</entry>
+    <entry date="2018-09-10T22:18:29" operation="COM">Tournament Completed</entry>
+    <entry date="2018-09-10T22:18:30" operation="UPL">Results being uploaded.</entry>
+    <entry date="2018-09-10T22:18:30" operation="UPL">Results being uploaded.</entry>
+  </log>
+</event>
