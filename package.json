@@ -4,6 +4,8 @@
   "description": "Web site and application for my friends Tragic The Gathering club",
   "main": "index.js",
   "dependencies": {
+    "immutable": "3.8.2",
+    "lodash": "4.17.10",
     "sqlite3": "4.0.2",
     "xml2js": "0.4.19"
   },

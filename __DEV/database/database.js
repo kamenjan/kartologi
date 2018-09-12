@@ -4,6 +4,8 @@ const inspect = require('eyes').inspector({maxLength: false})
 
 // const db = new sqlite3.Database('../data/example.db.sqlite3')
 
+const productionDB = './db.sqlite3'
+
 /* UID generator  */
 const crypto = require('crypto')
 const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
@@ -12,7 +14,7 @@ const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
 
 function openSQLiteConnection () {
 
-  let db = new sqlite3.Database('../data/example.db.sqlite3', sqlite3.OPEN_READWRITE, (err) => {
+  let db = new sqlite3.Database(productionDB, sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message)
     console.log('Connected to the example.db.sqlite3 SQlite database.')
   })

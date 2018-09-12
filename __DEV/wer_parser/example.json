@@ -1,0 +1,649 @@
+[36m{
+    [1mtournament[22m: {
+        [1msanctionnumber[22m: [32m'18-09-12819499'[36m,
+        [1meventguid[22m: [32m'65863de3-b2a2-4dff-a093-02744f588619'[36m,
+        [1meventtypecode[22m: [32m'MGNS'[36m,
+        [1morgname[22m: [32m'Magic Art'[36m,
+        [1mcoordinator[22m: [32m'51154001'[36m,
+        [1mstartdate[22m: [32m'2018-09-10'[36m,
+        [1mpostevententry[22m: [32m'false'[36m,
+        [1menddate[22m: [32m'0001-01-01T00:00:00'[36m,
+        [1mformat[22m: [32m'MODERN'[36m,
+        [1meliminationType[22m: [32m'3'[36m,
+        [1miscasualreportonly[22m: [32m'False'[36m,
+        [1mtitle[22m: [32m'Magic Tournament '[36m,
+        [1misstarted[22m: [32m'True'[36m,
+        [1mstatus[22m: [32m'8'[36m,
+        [1mbatchid[22m: [32m''[36m,
+        [1misplayoff[22m: [32m'False'[36m,
+        [1mmanualmatchround[22m: [32m'0'[36m,
+        [1mnotes[22m: [32m''[36m,
+        [1mnumberofrounds[22m: [32m'4'[36m,
+        [1mplayoffstartround[22m: [32m'0'[36m
+    },
+    [1mplayers[22m: [
+        {
+            [1mid[22m: [32m'9213709753'[36m,
+            [1mfirst[22m: [32m'Tomaz'[36m,
+            [1mlast[22m: [32m'Umek'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'1030220331'[36m,
+            [1mfirst[22m: [32m'Aleksander'[36m,
+            [1mlast[22m: [32m'Fujs'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'36084463'[36m,
+            [1mfirst[22m: [32m'Tomo'[36m,
+            [1mlast[22m: [32m'Pejanovic Nosaka'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'1318559986'[36m,
+            [1mfirst[22m: [32m'Jost'[36m,
+            [1mlast[22m: [32m'Pintar'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'1154281'[36m,
+            [1mfirst[22m: [32m'Igor'[36m,
+            [1mlast[22m: [32m'Banic'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'9318556489'[36m,
+            [1mfirst[22m: [32m'Gal'[36m,
+            [1mlast[22m: [32m'Bumbar'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'2112738171'[36m,
+            [1mfirst[22m: [32m'Nejc'[36m,
+            [1mlast[22m: [32m'Bocaj'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'1154280'[36m,
+            [1mfirst[22m: [32m'Anze'[36m,
+            [1mlast[22m: [32m'Avsec'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'62880550'[36m,
+            [1mfirst[22m: [32m'Matej'[36m,
+            [1mlast[22m: [32m'Sircelj'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'8213635310'[36m,
+            [1mfirst[22m: [32m'Anze'[36m,
+            [1mlast[22m: [32m'Marinc'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'9316065110'[36m,
+            [1mfirst[22m: [32m'Matjaz'[36m,
+            [1mlast[22m: [32m'Zupan'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'7212291355'[36m,
+            [1mfirst[22m: [32m'Grega'[36m,
+            [1mlast[22m: [32m'Prosen'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'8317046977'[36m,
+            [1mfirst[22m: [32m'Domen'[36m,
+            [1mlast[22m: [32m'Prestor'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'1203928751'[36m,
+            [1mfirst[22m: [32m'Marsel'[36m,
+            [1mlast[22m: [32m'Bratusa'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'9318673113'[36m,
+            [1mfirst[22m: [32m'Gaj'[36m,
+            [1mlast[22m: [32m'Zizek'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'8102344303'[36m,
+            [1mfirst[22m: [32m'Beno'[36m,
+            [1mlast[22m: [32m'Sircelj'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'3112749803'[36m,
+            [1mfirst[22m: [32m'Andrej'[36m,
+            [1mlast[22m: [32m'Kos'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'8213635372'[36m,
+            [1mfirst[22m: [32m'Tim'[36m,
+            [1mlast[22m: [32m'Vakselj'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'8213635288'[36m,
+            [1mfirst[22m: [32m'Drek'[36m,
+            [1mlast[22m: [32m'Money'[36m,
+            [1mmiddle[22m: [32m'G'[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'51151183'[36m,
+            [1mfirst[22m: [32m'Klemen'[36m,
+            [1mlast[22m: [32m'Pregl'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'4318719640'[36m,
+            [1mfirst[22m: [32m'Anze'[36m,
+            [1mlast[22m: [32m'Dragan'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'6030220335'[36m,
+            [1mfirst[22m: [32m'Peter'[36m,
+            [1mlast[22m: [32m'Gaber'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        },
+        {
+            [1mid[22m: [32m'4213629327'[36m,
+            [1mfirst[22m: [32m'Peter'[36m,
+            [1mlast[22m: [32m'Kolar'[36m,
+            [1mmiddle[22m: [32m''[36m,
+            [1mcountry[22m: [32m'SI'[36m
+        }
+    ],
+    [1mrounds[22m: [
+        {
+            [1mnumber[22m: [32m'1'[36m,
+            [1mPlayFormat[22m: [32m'MODERN'[36m,
+            [1mdate[22m: [32m'2018-09-10T19:05:06'[36m,
+            [1mteamformat[22m: [32m'false'[36m,
+            [1mmatches[22m: [
+                {
+                    [1mperson[22m: [32m'9213709753'[36m,
+                    [1moutcome[22m: [32m'3'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'36084463'[36m,
+                    [1mopponent[22m: [32m'1030220331'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1154281'[36m,
+                    [1mopponent[22m: [32m'1318559986'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318556489'[36m,
+                    [1mopponent[22m: [32m'2112738171'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'62880550'[36m,
+                    [1mopponent[22m: [32m'1154280'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8213635310'[36m,
+                    [1mopponent[22m: [32m'9316065110'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'7212291355'[36m,
+                    [1mopponent[22m: [32m'8317046977'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318673113'[36m,
+                    [1mopponent[22m: [32m'1203928751'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8102344303'[36m,
+                    [1mopponent[22m: [32m'3112749803'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8213635288'[36m,
+                    [1mopponent[22m: [32m'8213635372'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'51151183'[36m,
+                    [1mopponent[22m: [32m'4318719640'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'4213629327'[36m,
+                    [1mopponent[22m: [32m'6030220335'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                }
+            ]
+        },
+        {
+            [1mnumber[22m: [32m'2'[36m,
+            [1mPlayFormat[22m: [32m'MODERN'[36m,
+            [1mdate[22m: [32m'2018-09-10T19:46:42'[36m,
+            [1mteamformat[22m: [32m'false'[36m,
+            [1mmatches[22m: [
+                {
+                    [1mperson[22m: [32m'8213635372'[36m,
+                    [1moutcome[22m: [32m'3'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8102344303'[36m,
+                    [1mopponent[22m: [32m'7212291355'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'51151183'[36m,
+                    [1mopponent[22m: [32m'62880550'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318556489'[36m,
+                    [1mopponent[22m: [32m'9318673113'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'36084463'[36m,
+                    [1mopponent[22m: [32m'8213635288'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'4213629327'[36m,
+                    [1mopponent[22m: [32m'9213709753'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1154281'[36m,
+                    [1mopponent[22m: [32m'8213635310'[36m,
+                    [1moutcome[22m: [32m'2'[36m,
+                    [1mwin[22m: [32m'1'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'1'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'2112738171'[36m,
+                    [1mopponent[22m: [32m'6030220335'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8317046977'[36m,
+                    [1mopponent[22m: [32m'1318559986'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1154280'[36m,
+                    [1mopponent[22m: [32m'9316065110'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1203928751'[36m,
+                    [1mopponent[22m: [32m'1030220331'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'3112749803'[36m,
+                    [1mopponent[22m: [32m'4318719640'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                }
+            ]
+        },
+        {
+            [1mnumber[22m: [32m'3'[36m,
+            [1mPlayFormat[22m: [32m'MODERN'[36m,
+            [1mdate[22m: [32m'2018-09-10T20:41:52'[36m,
+            [1mteamformat[22m: [32m'false'[36m,
+            [1mmatches[22m: [
+                {
+                    [1mperson[22m: [32m'6030220335'[36m,
+                    [1moutcome[22m: [32m'3'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'4213629327'[36m,
+                    [1mopponent[22m: [32m'36084463'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8102344303'[36m,
+                    [1mopponent[22m: [32m'51151183'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318556489'[36m,
+                    [1mopponent[22m: [32m'8213635310'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1154281'[36m,
+                    [1mopponent[22m: [32m'7212291355'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318673113'[36m,
+                    [1mopponent[22m: [32m'8213635372'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'3112749803'[36m,
+                    [1mopponent[22m: [32m'1154280'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'62880550'[36m,
+                    [1mopponent[22m: [32m'1203928751'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'2112738171'[36m,
+                    [1mopponent[22m: [32m'8213635288'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8317046977'[36m,
+                    [1mopponent[22m: [32m'9213709753'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1030220331'[36m,
+                    [1mopponent[22m: [32m'4318719640'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9316065110'[36m,
+                    [1mopponent[22m: [32m'1318559986'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                }
+            ]
+        },
+        {
+            [1mnumber[22m: [32m'4'[36m,
+            [1mPlayFormat[22m: [32m'MODERN'[36m,
+            [1mdate[22m: [32m'2018-09-10T21:32:54'[36m,
+            [1mteamformat[22m: [32m'false'[36m,
+            [1mmatches[22m: [
+                {
+                    [1mperson[22m: [32m'4318719640'[36m,
+                    [1mopponent[22m: [32m'9316065110'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'9318556489'[36m,
+                    [1mopponent[22m: [32m'8102344303'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'4213629327'[36m,
+                    [1mopponent[22m: [32m'1154281'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'51151183'[36m,
+                    [1mopponent[22m: [32m'9318673113'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'36084463'[36m,
+                    [1mopponent[22m: [32m'2112738171'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'62880550'[36m,
+                    [1mopponent[22m: [32m'3112749803'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8213635310'[36m,
+                    [1mopponent[22m: [32m'8317046977'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'6030220335'[36m,
+                    [1mopponent[22m: [32m'9213709753'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'7212291355'[36m,
+                    [1mopponent[22m: [32m'1203928751'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8213635288'[36m,
+                    [1mopponent[22m: [32m'1154280'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'8213635372'[36m,
+                    [1mopponent[22m: [32m'1030220331'[36m,
+                    [1moutcome[22m: [32m'1'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'1'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                },
+                {
+                    [1mperson[22m: [32m'1318559986'[36m,
+                    [1moutcome[22m: [32m'3'[36m,
+                    [1mwin[22m: [32m'2'[36m,
+                    [1mloss[22m: [32m'0'[36m,
+                    [1mdraw[22m: [32m'0'[36m,
+                    [1mwinbydrop[22m: [32m'False'[36m
+                }
+            ]
+        }
+    ]
+}[36m[0m
