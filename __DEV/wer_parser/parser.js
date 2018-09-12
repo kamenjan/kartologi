@@ -1,16 +1,9 @@
 const fs = require('fs')
 const xml2js = require('xml2js')
-const sqlite3 = require('sqlite3').verbose()
-// const db = new sqlite3.Database('../data/db.sqlite3')
+const inspect = require('eyes').inspector({maxLength: false})
 const parser = new xml2js.Parser()
-const crypto = require('crypto')
 
 let players, matches
-
-/* UID generator */
-const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
-
-
 
 const parseXML = (pathToFile) => {
   fs.readFile(pathToFile, function(err, data) {
@@ -21,15 +14,25 @@ const parseXML = (pathToFile) => {
       let novArray = []
 
       matches = data.event.matches[0].round
-      .map( round => round.match )
-      .map( matchesArray => {
-        matchesArray.map( match => novArray.push(match['$']))
+      .map( (roundMatches, index, array) => {
+        roundMatches.match.map( match => novArray.push(match['$']))
       })
       // processPlayer(novArray, players)
+      console.log(novArray);
     })
   })
 }
 
+const parseXML1 = (pathToFile) => {
+  fs.readFile(pathToFile, function(err, data) {
+    parser.parseString(data, function (err, data) {
+
+      const rounds = data.event.matches[0].round
+
+      inspect(rounds)
+    })
+  })
+}
 
 const processPlayer = (matches, players) => {
   players.forEach( player => {
@@ -47,28 +50,5 @@ const processPlayer = (matches, players) => {
 }
 
 
-function openSQLiteConnection () {
-  let db = new sqlite3.Database('../data/db.sqlite3', sqlite3.OPEN_READWRITE, (err) => {
-    if (err) return console.error(err.message)
-    console.log('Connected to the db.sqlite3 SQlite database.')
-  })
-
-  const query = `INSERT INTO players(uid) VALUES(?)`
-  const params = ['nektestnuid']
-
-  // db.run(query, params, (err) => {
-  //   if (err) return console.error(err.message)
-  //   console.log(`A row has been inserted with rowid ${this.lastID}`);
-  // })
-
-  const query2 = `SELECT * FROM players`;
-  db.all(query2, [], (err, rows) => {
-    if (err) throw err
-    rows.forEach( (row) => console.log(row) )
-  })
-
-  db.close()
-}
-
 // parseXML('../data/live_example.xml')
-openSQLiteConnection()
+parseXML1('../data/live_example.xml')

@@ -20,3 +20,5 @@ node_modules
 
 # Development testing
 # __DEV
+
+__DEV/database/db.sqlite3
