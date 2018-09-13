@@ -9,33 +9,38 @@ const crypto = require('crypto')
 const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
 
 const openDB = () => {
-  return new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
+  return new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, err => {
     if (err) return console.error(err.message)
     console.log(`Connected to the ${dbPath} SQlite database.`)
   })
 }
 
 /* Util functions */
-const keysToFieldsString = (obj) => Object.keys(obj).join(',')
-const setSqlite3ValuseString = (obj) => Object.keys(obj).map( () => '?').join(',')
+const keysToFieldsString = obj => Object.keys(obj).join(',')
+const setValuePlaceholders = obj => Object.keys(obj).map( () => '?').join(',')
+
+/* TODO: create separate models for database interaction */
 
 /* Own functions */
-const insertTournament = (tournament) => {
+const insertTournament = tournament => {
   return new Promise( (resolve, reject) => {
     const db = openDB()
     let {eventguid, startdate, format, numberofrounds} = tournament
 
     const tournamentRowData = {
       uid: eventguid,
-      date: 897123469872146, // TODO: startdate to timestamp
+      date: 897123469872146, // TODO: convert startdate to timestamp
       format,
       rounds_total: numberofrounds
     }
 
-    const query = `INSERT INTO tournaments(${ keysToFieldsString(tournamentRowData) }) VALUES(${ setSqlite3ValuseString(tournamentRowData)})`
+    const query =
+      `INSERT INTO tournaments(${ keysToFieldsString(tournamentRowData) }) 
+       VALUES(${ setValuePlaceholders(tournamentRowData)})`
+
     const params = Object.values(tournamentRowData)
 
-    db.run(query, params, (err) => {
+    db.run(query, params, err => {
       if (err) reject(err)
       resolve(`${{ ... this}}`)
     })
@@ -43,38 +48,40 @@ const insertTournament = (tournament) => {
   })
 }
 
-const insertPlayers = (players) => {
+const insertPlayers = players => {
   return new Promise( (resolve, reject) => {
+
     const db = openDB()
+
     const playerRowStructure = {
       uid: undefined,
       dci: undefined,
-      name_first: undefined,
+      name_first: undefined,  
       name_last: undefined,
       country: undefined
     }
 
-    const generateParams = (player) => [
+    const generateParams = player => [
       generateUID(), player.id, player.first, player.last, player.country
     ]
 
     /* Query for inserting players in players table */
     const query =
       `INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) 
-       VALUES(${ setSqlite3ValuseString(playerRowStructure)})`
+       VALUES(${ setValuePlaceholders(playerRowStructure)})`
 
     /* TODO: Query for inserting players in players_to_tournament table */
 
     db.serialize(() => {
       players
       .map( player => generateParams(player))
-      .map((params) => db.run(query, params, (err) => err ? reject(err) : null))
+      .map( params => db.run(query, params, err => err ? reject(err) : null))
       db.close( () => resolve() )
     })
   })
 }
 
-const insertRounds = (rounds) => {
+const insertRounds = rounds => {
   return new Promise( (resolve, reject) => {
 
   })

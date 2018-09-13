@@ -14,13 +14,9 @@ router.post('/upload', cors(), function (req, res, next) {
   werFile.mv(werFilePath)
   .then( () => werParser.getEventDataFromWerFile(werFilePath))
   .then( eventData => db.insertEventData(eventData) )
-  .then( savedData => {
-    console.log('tournament data uploaded and saved to database');
-    console.log(savedData);
-    res.send({ message: 'tournament data uploaded and saved to database' })
-  })
+  .then( () => res.send( 'Upload and save successful' ))
   .catch( err => {
-    console.log(err);
+    console.log(err)
     res.send( err )
     // TODO: log error in db
   })
