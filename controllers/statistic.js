@@ -9,10 +9,10 @@ const warFilePath = path.join(__basedir, '__DEV/data/live_example.xml')
 const werParser = require('../services/wer_parser')
 
 router.get('/', cors(), function (req, res) {
-  werParser.getEventDataFromWerFile(warFilePath)
-  .then( response => {
-    res.send(response)
-  })
+  // werParser.getEventDataFromWerFile(warFilePath)
+  // .then( response => {
+  //   res.send(response)
+  // })
 })
 
 router.post('/upload', cors(), function (req, res, next) {

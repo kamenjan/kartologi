@@ -34,6 +34,6 @@
     "jshint-loader": "0.8.4",
     "webpack": "4.18.0"
   },
-  "author": "",
+  "author": "kamenjan",
   "license": "WTFPL"
 }

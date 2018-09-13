@@ -38,14 +38,12 @@ app.get('/', cors(), function (req, res) {
   res.send('kartologi api root')
 })
 
-
 /* Catch 404 and forward to error handler */
 app.use(function(req, res, next) {
   let err = new Error('Not Found')
   err.status = 404
   next(err);
 })
-
 
 /* Development error handler [show stacktrace = TRUE] */
 if (app.get('env') === 'development') {
@@ -59,7 +57,6 @@ if (app.get('env') === 'development') {
 	  // })
   })
 }
-
 
 /* Production error handler [show stacktrace = FALSE] */
 app.use(function(err, req, res) {
