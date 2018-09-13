@@ -9,8 +9,7 @@ const crypto = require('crypto')
 const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
 
 const openDB = () => {
-  // TODO: switch back to OPEN_READWRITE in production
-  return new sqlite3.Database(dbPath, sqlite3.OPEN_CREATE, (err) => {
+  return new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message)
     console.log(`Connected to the ${dbPath} SQlite database.`)
   })
@@ -56,16 +55,15 @@ const insertPlayers = (players) => {
     }
 
     const generateParams = (player) => [
-      generateUID(),
-      player.id,
-      player.first,
-      player.last,
-      player.country
+      generateUID(), player.id, player.first, player.last, player.country
     ]
 
-    // let placeholders = players.map( () => `(${setSqlite3ValuseString(playerRowStructure)})`).join(',');
-    const query = `INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) VALUES(${ setSqlite3ValuseString(playerRowStructure)})`
-    const stmt = db.prepare(`INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) VALUES(${ setSqlite3ValuseString(playerRowStructure)})`);
+    /* Query for inserting players in players table */
+    const query =
+      `INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) 
+       VALUES(${ setSqlite3ValuseString(playerRowStructure)})`
+
+    /* TODO: Query for inserting players in players_to_tournament table */
 
     db.serialize(() => {
       players
@@ -86,20 +84,11 @@ const insertRounds = (rounds) => {
 const database = {
   insertEventData: ({ tournament, players, rounds }) => {
     return new Promise( (resolve, reject) => {
-      insertPlayers(players)
+      insertTournament(tournament)
+      .then( () => insertPlayers(players) )
+      // .then( () => insertRounds(rounds) )
       .then( () => resolve() )
-      .catch( err => {
-        console.log(err)
-        reject(err)
-      })
-      // insertTournament(tournament)
-      // .then( () => insertPlayers(players) )
-      // // .then( () => insertRounds(rounds) )
-      // .then( () => resolve() )
-      // .catch( err => {
-      //   console.log(err)
-      //   reject(err)
-      // })
+      .catch( err => reject(err) )
     })
   }
 }
