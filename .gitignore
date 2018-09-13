@@ -19,6 +19,7 @@ TransitionAnimation.ini
 node_modules
 
 # Development testing
-# __DEV
+__DEV
 
-__DEV/database/db.sqlite3
+# Production database
+database/kartologi.db
