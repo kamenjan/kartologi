@@ -3,30 +3,34 @@ let router = express.Router()
 
 const cors = require('cors')
 
-const path = require('path')
-const warFilePath = path.join(__basedir, '__DEV/data/live_example.xml')
-
 const werParser = require('../services/wer_parser')
+const db = require('../database/database')
 
-router.get('/', cors(), function (req, res) {
-  // werParser.getEventDataFromWerFile(warFilePath)
-  // .then( response => {
-  //   res.send(response)
-  // })
+/* SOURCE: https://codeburst.io/asynchronous-file-upload-with-node-and-react-ea2ed47306dd */
+router.post('/upload', cors(), function (req, res, next) {
+
+  let werFile = req.files.file
+  const werFilePath = `${__basedir}/upload/${req.body.filename}.xml`
+  werFile.mv(werFilePath)
+  .then( () => werParser.getEventDataFromWerFile(werFilePath))
+  .then( eventData => db.insertEventData(eventData) )
+  .then( savedData => {
+    console.log('tournament data uploaded and saved to database');
+    console.log(savedData);
+    res.send({ message: 'tournament data uploaded and saved to database' })
+  })
+  .catch( err => {
+    console.log(err);
+    res.send( err )
+    // TODO: log error in db
+  })
 })
 
-router.post('/upload', cors(), function (req, res, next) {
-  let werFile = req.files.file
-  let werFilePath = `${__basedir}/upload/${req.body.filename}.xml`
+router.get('/insert', cors(), function (req, res, next) {
 
-  werFile.mv(werFilePath)
-  .then(() => {
-    return werParser.getEventDataFromWerFile(warFilePath)
-  }).then( response => {
-    res.send(response)
-  }).catch( err => {
-    console.log(err)
-  })
+})
+
+router.get('/players', cors(), function (req, res, next) {
 
 })
 

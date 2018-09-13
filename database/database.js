@@ -1,38 +1,107 @@
 const sqlite3 = require('sqlite3').verbose()
-
 const inspect = require('eyes').inspector({maxLength: false})
 
-// const db = new sqlite3.Database('../data/example.db.sqlite3')
-
-const productionDB = './db.sqlite3'
+/* NOTE: if you change this, make sure you include new path in .gitignore */
+const dbPath = `${__basedir}/database/kartologi.db`
 
 /* UID generator  */
 const crypto = require('crypto')
 const generateUID = () => Buffer.from(crypto.randomBytes(8)).toString('hex')
 
-
-
-function openSQLiteConnection () {
-
-  let db = new sqlite3.Database(productionDB, sqlite3.OPEN_READWRITE, (err) => {
+const openDB = () => {
+  // TODO: switch back to OPEN_READWRITE in production
+  return new sqlite3.Database(dbPath, sqlite3.OPEN_CREATE, (err) => {
     if (err) return console.error(err.message)
-    console.log('Connected to the example.db.sqlite3 SQlite database.')
+    console.log(`Connected to the ${dbPath} SQlite database.`)
   })
-
-  const query = `INSERT INTO players(uid) VALUES(?)`
-  const params = ['nektestnuid']
-
-  // db.run(query, params, (err) => {
-  //   if (err) return console.error(err.message)
-  //   console.log(`A row has been inserted with rowid ${this.lastID}`);
-  // })
-
-  const query2 = `SELECT * FROM players`;
-  db.all(query2, [], (err, rows) => {
-    if (err) throw err
-    rows.forEach( (row) => console.log(row) )
-  })
-
-  db.close()
 }
-// openSQLiteConnection()
+
+/* Util functions */
+const keysToFieldsString = (obj) => Object.keys(obj).join(',')
+const setSqlite3ValuseString = (obj) => Object.keys(obj).map( () => '?').join(',')
+
+/* Own functions */
+const insertTournament = (tournament) => {
+  return new Promise( (resolve, reject) => {
+    const db = openDB()
+    let {eventguid, startdate, format, numberofrounds} = tournament
+
+    const tournamentRowData = {
+      uid: eventguid,
+      date: 897123469872146, // TODO: startdate to timestamp
+      format,
+      rounds_total: numberofrounds
+    }
+
+    const query = `INSERT INTO tournaments(${ keysToFieldsString(tournamentRowData) }) VALUES(${ setSqlite3ValuseString(tournamentRowData)})`
+    const params = Object.values(tournamentRowData)
+
+    db.run(query, params, (err) => {
+      if (err) reject(err)
+      resolve(`${{ ... this}}`)
+    })
+    db.close()
+  })
+}
+
+const insertPlayers = (players) => {
+  return new Promise( (resolve, reject) => {
+    const db = openDB()
+    const playerRowStructure = {
+      uid: undefined,
+      dci: undefined,
+      name_first: undefined,
+      name_last: undefined,
+      country: undefined
+    }
+
+    const generateParams = (player) => [
+      generateUID(),
+      player.id,
+      player.first,
+      player.last,
+      player.country
+    ]
+
+    // let placeholders = players.map( () => `(${setSqlite3ValuseString(playerRowStructure)})`).join(',');
+    const query = `INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) VALUES(${ setSqlite3ValuseString(playerRowStructure)})`
+    const stmt = db.prepare(`INSERT INTO players(${ keysToFieldsString(playerRowStructure) }) VALUES(${ setSqlite3ValuseString(playerRowStructure)})`);
+
+    db.serialize(() => {
+      players
+      .map( player => generateParams(player))
+      .map((params) => db.run(query, params, (err) => err ? reject(err) : null))
+      db.close( () => resolve() )
+    })
+  })
+}
+
+const insertRounds = (rounds) => {
+  return new Promise( (resolve, reject) => {
+
+  })
+}
+
+/* Public functions */
+const database = {
+  insertEventData: ({ tournament, players, rounds }) => {
+    return new Promise( (resolve, reject) => {
+      insertPlayers(players)
+      .then( () => resolve() )
+      .catch( err => {
+        console.log(err)
+        reject(err)
+      })
+      // insertTournament(tournament)
+      // .then( () => insertPlayers(players) )
+      // // .then( () => insertRounds(rounds) )
+      // .then( () => resolve() )
+      // .catch( err => {
+      //   console.log(err)
+      //   reject(err)
+      // })
+    })
+  }
+}
+
+module.exports = database
