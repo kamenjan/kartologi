@@ -4,8 +4,7 @@
   "description": "Web site and application for my friends Tragic The Gathering club",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node ./main.js",
-    "start-dev": "NODE_ENV=development node ./main.js",
+    "start": "NODE_ENV=development nodemon ./main.js",
     "clean": "rm -rf ./node_modules"
   },
   "dependencies": {
@@ -31,8 +30,7 @@
     "eyes": "0.1.8",
     "file-loader": "2.0.0",
     "jshint": "2.9.6",
-    "jshint-loader": "0.8.4",
-    "webpack": "4.18.0"
+    "jshint-loader": "0.8.4"
   },
   "author": "kamenjan",
   "license": "WTFPL"
