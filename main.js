@@ -14,7 +14,9 @@ app.set('port', port)
 
 const server = app.listen(port)
 
+/* A few globals, just to keep things interesting ;) */
 global.__basedir = __dirname
+global.__inspect = require('eyes').inspector({maxLength: false})
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
