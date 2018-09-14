@@ -19,6 +19,7 @@ const database = {
   open: () => {
     return new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, err => {
       if (err) return console.error(err.message)
+      // TODO: remove console.log and write potential error in log file
       console.log(`Connected to the ${dbPath} SQlite database.`)
     })
   },

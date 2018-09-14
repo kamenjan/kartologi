@@ -22,11 +22,8 @@ router.post('/upload', cors(), function (req, res, next) {
   })
 })
 
-router.get('/insert', cors(), function (req, res, next) {
-
-})
-
-router.get('/players', cors(), function (req, res, next) {
+/* TODO: Before saving data to DB, user should append decks to players */
+router.get('/update', cors(), function (req, res, next) {
 
 })
 

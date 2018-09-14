@@ -3,10 +3,6 @@ const xml2js = require('xml2js')
 const parser = new xml2js.Parser()
 const { composeAsync } = require('./functional')
 
-/* Debugging tools for deep objects. Make global? */
-// const eyes = require('eyes')
-// const inspect = eyes.inspector({maxLength: false})
-
 const readWerFile = (werFilePath) => {
   return new Promise( (resolve, reject) => {
     fs.readFile(werFilePath, (err, string) => {
