@@ -36,6 +36,7 @@ const insertTournament = tournament => {
   })
 }
 
+// NOTE: change to addPlayer.
 const insertPlayers = (players, tournament) => {
   return new Promise( (resolve, reject) => {
 
@@ -164,8 +165,8 @@ const eventModel = {
   insertData: ({ tournament, players, rounds }) => {
     return new Promise( (resolve, reject) => {
       insertTournament(tournament)
-      .then( () => insertPlayers(players, tournament) )
-      .then( () => insertRounds(rounds, tournament) )
+      // .then( () => insertPlayers(players, tournament) )
+      // .then( () => insertRounds(rounds, tournament) )
       .then( () => resolve({
         message: 'Tournament data successfully parsed and saved.',
         err: undefined
@@ -177,6 +178,13 @@ const eventModel = {
       }) )
     })
   }
+}
+
+const getEventDataFromWerFile = (pathToWerFile) => {
+  return composeAsync(
+    readWerFile,
+    structureEventData(UIDgenerator)
+  )(pathToWerFile)
 }
 
 module.exports = eventModel

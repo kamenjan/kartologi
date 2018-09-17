@@ -1,77 +1,93 @@
-const fs = require('fs')
 const xml2js = require('xml2js')
 const parser = new xml2js.Parser()
+
 const { composeAsync } = require('./functional')
+
 const generateUID = () => Buffer.from(require('crypto').randomBytes(8)).toString('hex')
 
-const readWerFile = (werFilePath) => {
+const xmlToJson = xmlString => {
   return new Promise( (resolve, reject) => {
-    fs.readFile(werFilePath, (err, string) => {
+    parser.parseString(xmlString, (err, json) => {
       if (err) reject(err)
-      parser.parseString(string, (err, json) => {
-        if (err) reject(err)
-        // NOTE: added return for brevity
-        return resolve(json.event)
-      })
+      // NOTE: added return for brevity
+      return resolve(json.event)
     })
   })
 }
 
-const structureEventData = event => ({
+const addUids = uidGenerator => event => ({
   tournament: {
     uid: event['$'].eventguid,
-    date: event['$'].startdate, // TODO: .toTimestamp
-    roundsTotal: event['$'].numberofrounds,
-    format: event['$'].format
+    ... event['$']
   },
-  players: event.participation[0].person.map( item => ({
-    uid: generateUID(),
-    dci: item['$'].id,
-    name_first: item['$'].first,
-    name_last: item['$'].last,
-    country: item['$'].country,
+  players: event.participation[0].person.map( player => ({
+    uid: uidGenerator(),
+    ... player['$']
   })),
-  rounds: event.matches[0].round.map(round => ({
-    uid: generateUID(),
-    tournament_uid: event['$'].eventguid,
-    number: round['$'].number,
-    date: round['$'].date, // TODO: .toTimestamp
-    matches: round.match.map( match => match['$'] )
-  })),
-  getMatches: function() {
-    return this.rounds.map( round => round.matches.map( match => ({
-      uid: generateUID(),
-      round_uid: round.uid,
-      player_dic: match.person,
-      opponent_dic: match.opponent,
-      outcome: match.outcome,
-      win: match.win,
-      loss: match.loss,
-      draw: match.draw
-    })))
-    .reduce((allMatches, roundMatches) => allMatches.concat(roundMatches))
-  },
-  getRounds: function () {
-    return this.rounds.map( ({uid, tournament_uid, number, date}) => ({
-      uid, tournament_uid, number, date
-    }))
-  },
-  getPlayersToTournament: function() {
-    return this.players.map( player => ({
-      player_dci: player.dci,
-      tournament_uid: this.tournament.uid,
-      deck: undefined
-    }))
-  }
+  rounds: event.matches[0].round.map( round => {
+    const tmpRoundUid = uidGenerator()
+    return {
+      uid: tmpRoundUid, // I need this value ...
+      tournament_uid: event['$'].eventguid,
+      ... round['$'],
+      matches: round.match.map( match => ({
+        uid: uidGenerator(), // ... over here.
+        round_uid: tmpRoundUid, // ... over here.
+        ... match['$']
+      }))
+    }
+  })
 })
 
-const getEventDataFromWerFile = (pathToWerFile) => {
+const concatRoundsMatches = event => ({
+  ... event,
+  matches: event.rounds.map( round => round.matches.map(match => match))
+  .reduce((allMatches, roundMatches) => allMatches.concat(roundMatches))
+})
+
+const filterEventData = event => ({
+  tournament: {
+    ... event.tournament,
+    date: event.tournament.startdate, // TODO: .toTimestamp
+    rounds_total: event.tournament.numberofrounds
+  },
+  players: event.players.map( player => ({
+    ... player,
+    dci: player.id
+  })),
+  rounds: event.rounds.map(({uid, tournament_uid, date, number}) => ({
+    uid, tournament_uid, date, number
+  })),
+  matches: event.matches.map(match => ({
+    ... match,
+    player_dci: match.person,
+    opponent_dci: match.opponent
+  }))
+})
+
+const addPlayersToTournaments = event => ({
+  ... event,
+  playersToTournament: event.players.map( ({dci}) => ({
+    dci, tournament_uid: event.tournament.uid
+  }))
+})
+
+const logData = event => {
+  console.log(event)
+  return event
+}
+
+const parseWerData = (werData) => {
   return composeAsync(
-    readWerFile,
-    structureEventData
-  )(pathToWerFile)
+    // logData,
+    xmlToJson,
+    addUids(generateUID),
+    concatRoundsMatches,
+    filterEventData,
+    addPlayersToTournaments
+  )(werData)
 }
 
 module.exports = {
-  getEventDataFromWerFile
+  parseWerData
 }
