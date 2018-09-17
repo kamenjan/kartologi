@@ -2,6 +2,7 @@ const fs = require('fs')
 const xml2js = require('xml2js')
 const parser = new xml2js.Parser()
 const { composeAsync } = require('./functional')
+const generateUID = () => Buffer.from(require('crypto').randomBytes(8)).toString('hex')
 
 const readWerFile = (werFilePath) => {
   return new Promise( (resolve, reject) => {
@@ -9,73 +10,60 @@ const readWerFile = (werFilePath) => {
       if (err) reject(err)
       parser.parseString(string, (err, json) => {
         if (err) reject(err)
-        resolve(json.event)
+        // NOTE: added return for brevity
+        return resolve(json.event)
       })
     })
   })
 }
 
-
-/* TODO: finer data parsing before sending to db */
-const structureEventData = (event) => ({
+const structureEventData = event => ({
   tournament: {
     uid: event['$'].eventguid,
     date: event['$'].startdate, // TODO: .toTimestamp
     roundsTotal: event['$'].numberofrounds,
-    format
+    format: event['$'].format
   },
-  players: event.participation[0].person.map( item => item['$'] ),
+  players: event.participation[0].person.map( item => ({
+    uid: generateUID(),
+    dci: item['$'].id,
+    name_first: item['$'].first,
+    name_last: item['$'].last,
+    country: item['$'].country,
+  })),
   rounds: event.matches[0].round.map(round => ({
-    ... round['$'],
+    uid: generateUID(),
+    tournament_uid: event['$'].eventguid,
+    number: round['$'].number,
+    date: round['$'].date, // TODO: .toTimestamp
     matches: round.match.map( match => match['$'] )
-  }))
+  })),
+  getMatches: function() {
+    return this.rounds.map( round => round.matches.map( match => ({
+      uid: generateUID(),
+      round_uid: round.uid,
+      player_dic: match.person,
+      opponent_dic: match.opponent,
+      outcome: match.outcome,
+      win: match.win,
+      loss: match.loss,
+      draw: match.draw
+    })))
+    .reduce((allMatches, roundMatches) => allMatches.concat(roundMatches))
+  },
+  getRounds: function () {
+    return this.rounds.map( ({uid, tournament_uid, number, date}) => ({
+      uid, tournament_uid, number, date
+    }))
+  },
+  getPlayersToTournament: function() {
+    return this.players.map( player => ({
+      player_dci: player.dci,
+      tournament_uid: this.tournament.uid,
+      deck: undefined
+    }))
+  }
 })
-
-// NOTE: small and simple functions in order:
-// parse tournament date
-// assign tournament uid to rounds
-// generate rounds uids
-// assign round uid to matches
-// generate matches uids
-
-// NOTE: example of data structure for each event related table (except players_to_tournaments)
-const tournamentRowData = {
-  uid: eventguid,
-  date: startdate.toTimestamp, // startdate = "2018-09-10" TODO: convert
-  format,
-  rounds_total: numberofrounds
-}
-
-const playerRowStructure = {
-  uid: undefined,
-  dci: undefined,
-  name_first: undefined,
-  name_last: undefined,
-  country: undefined
-}
-
-const playerToTournamentRowStructure = {
-  player_uid: undefined,
-  tournament_uid: undefined,
-  deck: undefined
-}
-
-const roundRowStructure = {
-  round_uid: undefined,
-  tournament_uid: undefined,
-  date: undefined
-}
-
-const matchRowStructure = {
-  match_uid: undefined,
-  round_uid: undefined,
-  player: undefined,
-  opponent: undefined,
-  outcome: undefined,
-  win: undefined,
-  loss: undefined,
-  draw: undefined
-}
 
 const getEventDataFromWerFile = (pathToWerFile) => {
   return composeAsync(

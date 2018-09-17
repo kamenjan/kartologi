@@ -13,8 +13,11 @@ router.post('/upload', cors(), function (req, res, next) {
   const werFilePath = `${__basedir}/upload/${req.body.filename}.xml`
   werFile.mv(werFilePath)
   .then(() => werParser.getEventDataFromWerFile(werFilePath))
-  .then(eventData => eventModel.insertData(eventData) )
-  .then(insertResponse => res.send(insertResponse))
+  .then(eventData => {
+    console.log(eventData)
+  })
+  // .then(eventData => eventModel.insertData(eventData))
+  // .then(insertResponse => res.send(insertResponse))
   .catch(err => {
     console.log(err)
     res.send( err )

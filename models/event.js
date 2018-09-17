@@ -31,7 +31,8 @@ const insertTournament = tournament => {
     const params = Object.values(tournamentRowData)
 
     db.run(query, params, err => err ? reject(err) : resolve(`${{ ... this}}`))
-    db.close()
+    // NOTE: added return statement for brevity
+    return db.close()
   })
 }
 
