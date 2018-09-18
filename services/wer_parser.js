@@ -27,12 +27,12 @@ const addUids = uidGenerator => event => ({
   rounds: event.matches[0].round.map( round => {
     const tmpRoundUid = uidGenerator()
     return {
-      uid: tmpRoundUid, // I need this value ...
+      uid: tmpRoundUid,
       tournament_uid: event['$'].eventguid,
       ... round['$'],
       matches: round.match.map( match => ({
-        uid: uidGenerator(), // ... over here.
-        round_uid: tmpRoundUid, // ... over here.
+        uid: uidGenerator(),
+        round_uid: tmpRoundUid,
         ... match['$']
       }))
     }
