@@ -1,22 +1,32 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-let debug = require('debug')('app')
+const debug = require('debug')('app')
 const path = require('path')
-
-const fileUpload = require('express-fileupload')
 const bodyParser = require('body-parser')
+const session = require('express-session')
+
+const conf = require('./config/config')
 
 const env = app.get('env')
 
-let port = '3000'
-app.set('port', port)
+const fileUpload = require('express-fileupload')
+app.use(fileUpload())
 
-const server = app.listen(port)
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+/* session */
+app.use(session(conf.session))
 
 /* A few globals, just to keep things interesting ;) */
 global.__basedir = __dirname
 global.__inspect = require('eyes').inspector({maxLength: false})
+
+/* Setting up passport.js middleware */
+const userModel = require('./models/user')
+const usePassport = require('./services/passport')
+usePassport(userModel)
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -31,7 +41,19 @@ switch (env) {
 		break
 }
 
-app.use(fileUpload())
+/* Some convoluted fucked up shit to handle JWT tokens in request headers */
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+
+  //intercepts OPTIONS method
+  if ('OPTIONS' === req.method) {
+    res.send(200) // Tell browser we approve of this shit ...
+  } else {
+    next() // ... else move on
+  }
+})
 
 /* And of we go ... */
 app.use(require('./controllers/routes'))
