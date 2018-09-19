@@ -23,11 +23,6 @@ app.use(session(conf.session))
 global.__basedir = __dirname
 global.__inspect = require('eyes').inspector({maxLength: false})
 
-/* Setting up passport.js middleware */
-const userModel = require('./models/user')
-const usePassport = require('./services/passport')
-usePassport(userModel)
-
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
@@ -41,6 +36,7 @@ switch (env) {
 		break
 }
 
+/* TODO: Works for now. Make sense out of all this! */
 /* Some convoluted fucked up shit to handle JWT tokens in request headers */
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -49,7 +45,7 @@ app.use(function(req, res, next) {
 
   //intercepts OPTIONS method
   if ('OPTIONS' === req.method) {
-    res.send(200) // Tell browser we approve of this shit ...
+    res.sendStatus(200) // Tell browser we approve of this shit ...
   } else {
     next() // ... else move on
   }

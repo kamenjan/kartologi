@@ -1,10 +1,11 @@
 /**
- * Database controller.
+ * Database service.
  *
  * Kartologi API uses sqlite database technology. It stores all the data in
  * a single sqlite3 file - database/kartologi.db.
  *
  * @todo explore option with multiple sqlite files
+ * @todo move to /services
  *
  * @author kamenjan.
  */

@@ -17,7 +17,8 @@ const jwt = require('jsonwebtoken');
 const authenticate = ({ username, password }) => {
   return new Promise( (resolve, reject) => {
     const db = database.open()
-    const query = 'SELECT * FROM users WHERE username = ? AND password = ?'
+    /* TODO: define specific fields. I surely don't need password :/  */
+    const query = 'SELECT uid, username FROM users WHERE username = ? AND password = ?'
     db.get(query, [username, password], (err, user) => {
       err ? reject(err) : resolve(user)
     })
@@ -25,32 +26,9 @@ const authenticate = ({ username, password }) => {
   })
 }
 
-const generateJWT = function() {
-  const today = new Date()
-  const expirationDate = new Date(today)
-  expirationDate.setDate(today.getDate() + 60)
-
-  return jwt.sign({
-    email: this.email,
-    id: this._id,
-    exp: parseInt(expirationDate.getTime() / 1000, 10),
-  }, 'secret');
-}
-
-const toAuthJSON = function() {
-  return {
-    _id: this._id,
-    email: this.email,
-    token: this.generateJWT(),
-  }
-}
-
-
 /* Public functions */
 const userModel = {
-  authenticate,
-  generateJWT
+  authenticate
 }
-
 
 module.exports = userModel

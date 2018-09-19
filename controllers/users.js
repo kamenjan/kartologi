@@ -12,48 +12,59 @@
 
 let express = require('express')
 let router = express.Router()
-const passport = require('passport')
+// const passport = require('passport')
+const { readFile, writeFile } = require('../services/async_fs')
 
 /* Middleware */
 const cors = require('cors')
-const auth = require('../services/auth')
-const { generateJWT } = require('../services/jwt')
 
-const { readFile, writeFile } = require('../services/async_fs')
+const jwt = require('jsonwebtoken')
+const { authMiddleware, generateJWT, getTokenFromHeaders } = require('../services/auth')
+// const { generateJWT, jwt } = require('../services/jwt')
 
 const userModel = require('../models/user')
 
 router.post('/login', cors(), function (req, res, next) {
-  return passport.authenticate('local', { session: false }, (err, passportUser, info) => {
-    if (err) return next(err)
-    if (passportUser) {
-      const user = {
-        uid: passportUser.uid,
-        username: passportUser.username
-      }
-      // console.log('uspesno logiran, sta ima?');
+
+  const {username, password} = req.body
+
+  userModel.authenticate({username, password})
+  .then( user => {
+
+    if (user) {
+      console.log('success in my custom passport.js')
       return res.json({ token: generateJWT(user) }) // need arguments to structure jwt
     }
-    // console.log('kdo si ti supak? spizdi');
-    return res.send('gtfo creep') // need arguments to structure jwt
-  })(req, res, next)
+
+    console.log('fail in my custom passport.js')
+    return res.send('gtfo creep')
+
+  })
+  .catch( err => {
+    /* TODO: log error in DB */
+    console.log(err)
+  })
 })
 
-/* getting through request with modified headers and preflight OPTIONS request */
+/* TODO: getting through request with modified headers and preflight OPTIONS request */
 // https://www.npmjs.com/package/cors#configuration-options
 const corsOptions = {
   "origin": "*",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"
 }
 
-router.post('/private', [cors(), auth.required], function (req, res, next) {
+router.post('/private', [cors(), authMiddleware.required], function (req, res, next) {
   console.log('evo me tuki')
-  return res.send()
+  return res.send('pozdrav iz /private post')
 })
 
-router.get('/private', [cors(), auth.required], function (req, res, next) {
+router.get('/private', [cors(), authMiddleware.required], function (req, res, next) {
   console.log('evo me tuki')
-  return res.send()
+  console.log(req.body);
+  console.log(getTokenFromHeaders(req))
+  const decoded = jwt.decode(getTokenFromHeaders(req))
+  console.log(decoded);
+  return res.send('pozdrav iz /private get')
 })
 
 module.exports = router

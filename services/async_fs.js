@@ -1,3 +1,11 @@
+/**
+ * Asynchronous filesystem service.
+ *
+ * @todo: Write description.
+ *
+ * @author kamenjan.
+ */
+
 const fs = require('fs')
 
 const writeFile = (path, data, opts = 'utf8') =>

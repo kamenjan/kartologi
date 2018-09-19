@@ -1,3 +1,11 @@
+/**
+ * Declarative programming utility service.
+ *
+ * @todo: Write description.
+ *
+ * @author kamenjan.
+ */
+
 module.exports = {
 	compose: (...fns) => arg => fns.reduce((composed, f) => f(composed), arg),
 	composeAsync: (...fns) => input => fns.reduce((chain, f) => chain.then(f), Promise.resolve(input)),

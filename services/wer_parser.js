@@ -1,3 +1,11 @@
+/**
+ * Wer file parsing service.
+ *
+ * @todo: Write description.
+ *
+ * @author kamenjan.
+ */
+
 const xml2js = require('xml2js')
 const parser = new xml2js.Parser()
 
