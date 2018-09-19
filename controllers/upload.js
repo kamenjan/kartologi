@@ -10,7 +10,7 @@ const { parseWerData } = require('../services/wer_parser')
 const eventModel = require('../models/event')
 
 /* SOURCE: https://codeburst.io/asynchronous-file-upload-with-node-and-react-ea2ed47306dd */
-router.post('/upload', cors(), function (req, res, next) {
+router.post('/', cors(), function (req, res, next) {
 
   // Grab file from the request ...
   let werFile = req.files.file
@@ -29,7 +29,7 @@ router.post('/upload', cors(), function (req, res, next) {
 })
 
 /* TODO: Before saving data to DB, user should append decks to players */
-router.get('/update', cors(), function (req, res, next) {
+router.get('/', cors(), function (req, res, next) {
 
 })
 
