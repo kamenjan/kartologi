@@ -32,16 +32,21 @@ const getTokenFromHeaders = (req) => {
   return null;
 }
 
+const getTokenFromSession = req => req.session.token
+
+
 const authMiddleware = {
   required: expressJwt({
     secret: 'secret',
     userProperty: 'payload',
-    getToken: getTokenFromHeaders
+    // getToken: getTokenFromHeaders,
+    getToken: getTokenFromSession
   }),
   optional: expressJwt({
     secret: 'secret',
     userProperty: 'payload',
-    getToken: getTokenFromHeaders,
+    // getToken: getTokenFromHeaders,
+    getToken: getTokenFromSession,
     credentialsRequired: false
   })
 }
@@ -50,6 +55,7 @@ const authMiddleware = {
 const authentication = {
   generateJWT,
   getTokenFromHeaders,
+  getTokenFromSession,
   authMiddleware
 }
 

@@ -4,8 +4,9 @@
   "description": "Web site and application for my friends Tragic The Gathering club",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development nodemon ./main.js",
-    "start1": "NODE_ENV=development nodemon ./bin/server-min",
+    "start": "NODE_ENV=development nodemon ./bin/server-min",
+    "debug-express": "NODE_ENV=development DEBUG=express-session nodemon ./bin/server-min",
+    "serve": "NODE_ENV=production node ./bin/server-min",
     "clean": "rm -rf ./node_modules"
   },
   "dependencies": {
