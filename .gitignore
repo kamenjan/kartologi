@@ -1,3 +1,12 @@
+# Production database. Provided database/kartologi.db.example
+database/kartologi.db
+
+# Production config. Provided config/config.js.example
+config/config.js
+
+# Client application
+client
+
 # OS X
 .DS_Store*
 Icon?
@@ -20,9 +29,3 @@ node_modules
 
 # Development testing
 __DEV
-
-# Production database. Provided database/kartologi.db.example
-database/kartologi.db
-
-# Production config. Provided config/config.js.example
-config/config.js
