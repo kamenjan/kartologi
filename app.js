@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(fileUpload())
 app.use(session(conf.session))
-app.use([ setHeader, handlePreflightRequest ]) // TODO: testing session data
+// app.use([ setHeader, handlePreflightRequest ]) // TODO: testing session data
 
 /* Use the controllers */
 app.use(require('./controllers/routes'))
@@ -55,9 +55,13 @@ switch (env) {
 }
 
 /* Kartologi root get route */
-app.get('/', cors(), function (req, res) {
-  res.send('kartologi api root')
-})
+// app.get('/', cors(), function (req, res) {
+//   res.send('kartologi api root')
+// })
+
+/* Serve static react front end client on root */
+/* NOTE: This gets me out of troubles with CORS and authentication  */
+app.use('/', express.static('client'))
 
 /* Error handlers */
 app.use([ fourOhFour, handleError(env) ])
