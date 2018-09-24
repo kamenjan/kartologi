@@ -58,12 +58,13 @@ const corsOptions = {
 
 
 
-router.post('/private', [cors(corsOptions), authMiddleware.required], function (req, res) {
-  console.log('prajvt')
-  return res.send('pozdrav iz /private post')
+router.post('/private', [authMiddleware.required], function (req, res) {
+  console.log('in users/private post')
+  return res.send('in users/private post')
 })
 
-router.get('/private', [cors()], function (req, res) {
+router.get('/private', [authMiddleware.required], function (req, res) {
+
   console.log('prajvt get')
   console.log(req.session);
   console.log(req.session.token);
@@ -71,37 +72,38 @@ router.get('/private', [cors()], function (req, res) {
   // console.log(getTokenFromHeaders(req))
   // const decoded = jwt.decode(getTokenFromHeaders(req))
   // console.log(decoded);
-  return res.send('pozdrav iz /private get')
+
+  console.log('in users/private get')
+  return res.send('in users/private get')
 })
 
 
 /* NOTE: test express-session */
-router.get('/getcookie', [cors(corsOptions)], function (req, res) {
-  console.log('u get cookie routerju')
+router.get('/getcookie', function (req, res) {
+
   req.session.token = generateJWT({name: "rok"})
-  return res.send('pozdrav iz getcookie routerja')
+  // req.session.token = 'nekauthtoken'
+
+  console.log('in users/getcookie')
+  return res.send('in users/getcookie')
 })
 
-router.get('/returncookie', [cors(corsOptions), authMiddleware.required], function (req, res) {
-  console.log('u return cookie routerju')
+router.get('/returncookie', authMiddleware.required, function (req, res) {
+
+  console.log('in users/returncookie')
+
   console.log('session token:');
-  // __inspect(req.session)
   console.log(req.session.token)
   console.log(jwt.decode(req.session.token))
-  return res.send('pozdrav iz return cookie routerja')
+
+  return res.send('in users/returncookie')
 })
 
-router.get('/clearsession', [cors(corsOptions)], function (req, res) {
-  console.log('session destroyed')
+router.get('/clearsession', function (req, res) {
   req.session.destroy()
-  return res.send('session destroyed')
+  console.log('in users/clearsession - session destroyed')
+  return res.send('in users/clearsession - session destroyed')
 })
 
-/* NOTE: test next() for error handling and logModel for error reporting */
-// router.get('/next', [cors(), authMiddleware.optional], function (req, res, next) {
-//   console.log('u next routerju')
-//   next()
-//   // return res.send('pozdrav iz next routerja')
-// })
 
 module.exports = router

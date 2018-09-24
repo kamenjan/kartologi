@@ -16,8 +16,9 @@ const handleError = (env) => (err, req, res, next) => {
   //   type: "error",
   //   error: err
   // })
-
+  console.log('error jejej ====');
   __inspect(err)
+  console.log('error jejej ====');
   res.send()
 }
 

@@ -1,5 +1,4 @@
 const setHeader = (req, res, next) => {
-  /* TODO: FAKE ODKRITJE! this should be set to kartologi client domain! */
   // res.header('Access-Control-Allow-Origin', 'http://localhost:8080')
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS')
